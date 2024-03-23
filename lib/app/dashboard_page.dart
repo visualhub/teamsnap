@@ -40,8 +40,8 @@ class Dashboard extends StatelessWidget {
             padding: EdgeInsets.zero,
             onPressed: () {},
             child: Container(
-              height: 48,
-              width: 48,
+              height: 30,
+              width: 30,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(100),
                 color: kWhiteColor,
@@ -90,7 +90,7 @@ class Dashboard extends StatelessWidget {
               children: [
                 BottomNavBar(),
               ],
-            )
+            ),
           ],
         ),
       ),
