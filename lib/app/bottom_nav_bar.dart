@@ -39,7 +39,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
               updateSelectTabState(0);
             },
             isSelected: selectedTab == 0 ? true : false,
-            icon: 'assets/images/png/home.png',
+            icon: selectedTab == 0
+                ? 'assets/images/png/home_bold.png'
+                : 'assets/images/png/home.png',
             tileText: 'Home',
             color: selectedTab == 0 ? kPrimaryColor : kBackGroundColor,
           ),
@@ -48,8 +50,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
               updateSelectTabState(1);
             },
             isSelected: selectedTab == 1 ? true : false,
-            icon: 'assets/images/png/calendar.png',
-            tileText: 'Support',
+            icon: selectedTab == 1
+                ? 'assets/images/png/date_range_bold.png'
+                : 'assets/images/png/calendar.png',
+            tileText: 'Schedule',
             color: selectedTab == 1 ? kPrimaryColor : kBackGroundColor,
           ),
           _bottomNavBarTile(
@@ -57,8 +61,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
               updateSelectTabState(2);
             },
             isSelected: selectedTab == 2 ? true : false,
-            icon: 'assets/images/png/users.png',
-            tileText: 'Settings',
+            icon: selectedTab == 2
+                ? 'assets/images/png/group_bold.png'
+                : 'assets/images/png/users.png',
+            tileText: 'Roster',
             color: selectedTab == 2 ? kPrimaryColor : kBackGroundColor,
           ),
           _bottomNavBarTile(
@@ -66,8 +72,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
               updateSelectTabState(3);
             },
             isSelected: selectedTab == 3 ? true : false,
-            icon: 'assets/images/png/chat.png',
-            tileText: 'Profile',
+            icon: selectedTab == 3
+                ? 'assets/images/png/chat_bold.png'
+                : 'assets/images/png/chat.png',
+            tileText: 'Messages',
             color: selectedTab == 3 ? kPrimaryColor : kBackGroundColor,
           ),
           _bottomNavBarTile(
@@ -75,8 +83,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
               updateSelectTabState(4);
             },
             isSelected: selectedTab == 4 ? true : false,
-            icon: 'assets/images/png/lightbulb.png',
-            tileText: 'Profile',
+            icon: selectedTab == 3
+                ? 'assets/images/png/lightbulb.png'
+                : 'assets/images/png/lightbulb_bold.png',
+            tileText: 'Discover',
             color: selectedTab == 4 ? kPrimaryColor : kBackGroundColor,
           ),
         ],
@@ -116,6 +126,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
                     overflow: TextOverflow.ellipsis,
                     maxLines: 1,
                     style: TextStyle(
+                      fontFamily: 'Inter',
+                      fontSize: 10,
                       color: color,
                     ),
                   ),

@@ -10,9 +10,6 @@ class AppImageTextBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.sizeOf(context).width,
-      margin: const EdgeInsets.symmetric(
-        horizontal: 10,
-      ),
       decoration: BoxDecoration(
         color: kWhiteColor,
         borderRadius: BorderRadius.circular(
@@ -68,10 +65,10 @@ class AppImageTextBox extends StatelessWidget {
                 ),
                 Text(
                   'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever',
-                  maxLines: 3,
+                  maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 14,
                     fontWeight: FontWeight.w500,
                     fontFamily: 'Inter',
                     color: kBackGroundColor.withOpacity(0.9),
